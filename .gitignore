@@ -1,0 +1,5 @@
+*.log
+client_secret.json
+.venv
+__pychache__
+sheets.googleapis.com-python.json
