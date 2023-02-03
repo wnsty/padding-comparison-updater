@@ -8,35 +8,24 @@
             "shipping": 0,
             "size": {
                 "l": {
-                    "id": "356263",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "id": "357664",
+                    "waist_high": "42",
+                    "waist_low": "37"
                 },
                 "m": {
-                    "id": "356261",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "id": "357662",
+                    "waist_high": "36",
+                    "waist_low": "31"
                 },
                 "xl": {
-                    "id": "356265",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "id": "357666",
+                    "waist_high": "48",
+                    "waist_low": "43"
                 }
             },
             "tapes": "4",
             "units_per_bag": 10,
             "url": "https://us.abuniverse.com/product/agz/"
-        },
-        "ABU BareBum Diapers": {
-            "backing": "plastic",
-            "capacity": 0,
-            "id": "75454",
-            "notes": "",
-            "shipping": 0,
-            "size": {},
-            "tapes": "4",
-            "units_per_bag": 10,
-            "url": "https://us.abuniverse.com/product/bbv/"
         },
         "ABU Little Kings": {
             "backing": "plastic",
@@ -96,17 +85,6 @@
             "tapes": "4",
             "units_per_bag": 10,
             "url": "https://us.abuniverse.com/product/whi/"
-        },
-        "BunnyHopps 2-Tape": {
-            "backing": "plastic",
-            "capacity": 0,
-            "id": "234600",
-            "notes": "",
-            "shipping": 0,
-            "size": {},
-            "tapes": "4",
-            "units_per_bag": 10,
-            "url": "https://us.abuniverse.com/product/bunnyhopps-diapers/"
         },
         "BunnyHopps 4-Tape": {
             "backing": "plastic",

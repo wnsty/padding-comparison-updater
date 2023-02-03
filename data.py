@@ -1,3 +1,19 @@
+from enum import Enum
+
+class Link(Enum):
+    ABU = 'https://us.abuniverse.com'
+    AMAZON = 'https://www.amazon.com',
+    AWWSOCUTE = 'https://www.awwsocute.com'
+    BAMBINO = 'https://bambinodiapers.com'
+    EBAY = 'https://ebay.com'
+    INCONTROL = 'https://incontroldiapers.com'
+    LANDOFGENIE = 'https://landofgenie.com'
+    LITTLEFORBIG = 'https://littleforbig.com'
+    MYINNERBABY = 'https://myinnerbaby.com'
+    NORTHSHORE = 'https://northshorecare.com'
+    REARZ = 'https://rearz.ca'
+    TYKABLES = 'https://tykables.com'
+
 class Row():
     def __init__(
         self,

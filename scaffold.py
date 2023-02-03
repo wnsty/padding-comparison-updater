@@ -33,7 +33,7 @@ def build_scaffold():
 		'xpmedical': {},
     }
 
-    with open('scaffold_products.json', 'w') as file:
+    with open('json/scaffold_products.json', 'w') as file:
         json.dump(scaffold, file, sort_keys=True,
                   indent=4, separators=(',', ': '))
 
@@ -47,6 +47,8 @@ def grab_abu_products() -> dict:
             return scaffold
 
         for product in response.json():
+            if product['is_purchasable'] == False:
+                continue
             name = unescape(product['name']).encode('ascii', 'ignore').decode()
             scaffold[name] = {
                 'id': str(product['id']),
@@ -71,14 +73,14 @@ def grab_abu_variants(key) -> dict:
             error_bad_link(response.status_code, link)
             return result
 
-    data = response.json()
+        data = response.json()
 
-    for variation in data['variations'][::2]:
-        result[variation['attributes'][1]['value']] = {
-            'id': str(variation['id']),
-            'waist_high': '',
-            'waist_low': '',
-        }
+        for variation in data['variations'][::2]:
+            result[variation['attributes'][1]['value']] = {
+                'id': str(variation['id']),
+                'waist_high': '',
+                'waist_low': '',
+            }
     return result
 
 

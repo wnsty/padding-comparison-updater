@@ -1,15 +1,14 @@
 import requests
 import json
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
 import pygsheets
 from pygsheets import Worksheet, Cell, Address
 import numpy as np
-from data import product_list, Row
+from data import product_list, Row, Link
 from selenium import webdriver
 from selenium.webdriver.firefox.webdriver import WebDriver
-from enum import Enum
 import re
-from html import unescape, escape
+from html import unescape
 
 parser = 'html.parser'
 headers = {
@@ -17,23 +16,8 @@ headers = {
 }
 driver: WebDriver = None
 
-with open('products.json') as file:
+with open('json/products.json') as file:
     products = json.load(file)
-
-
-class Link(Enum):
-    ABU = 'https://us.abuniverse.com'
-    AMAZON = 'https://www.amazon.com',
-    AWWSOCUTE = 'https://www.awwsocute.com'
-    BAMBINO = 'https://bambinodiapers.com'
-    EBAY = 'https://ebay.com'
-    INCONTROL = 'https://incontroldiapers.com'
-    LANDOFGENIE = 'https://landofgenie.com'
-    LITTLEFORBIG = 'https://littleforbig.com'
-    MYINNERBABY = 'https://myinnerbaby.com'
-    NORTHSHORE = 'https://northshorecare.com'
-    REARZ = 'https://rearz.ca'
-    TYKABLES = 'https://tykables.com'
 
 
 def error_bad_link(status_code: str, link: str):
@@ -216,7 +200,7 @@ def grab_abu_products():
         if response.status_code != 200:
             error_bad_link(response.status_code, link)
             return
-        
+
         for product in response.json():
             name = unescape(product['name']).encode('ascii', 'ignore').decode()
             scaffold['abu'][name] = {
@@ -231,7 +215,7 @@ def grab_abu_products():
                 'url': product['permalink'],
             }
 
-        with open('abu_products.json', 'w') as file:
+        with open('json/abu_products.json', 'w') as file:
             json.dump(scaffold, file, sort_keys=True,
                       indent=4, separators=(',', ': '))
 
@@ -246,7 +230,7 @@ def grab_abu_variants(key) -> dict:
             return result
 
     data = response.json()
-    
+
     for variation in data['variations'][::2]:
         result[variation['attributes'][1]['value']] = {
             'id': variation['id'],
@@ -254,6 +238,7 @@ def grab_abu_variants(key) -> dict:
             'waist_low': '',
         }
     return result
+
 
 def test():
     print(
