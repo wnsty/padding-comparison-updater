@@ -83,7 +83,7 @@ class Row():
 ## bambino => product url, variant id
 
 ## abu => store url, size, packs
-# lfb => variant url
+## lfb => variant url
 
 # northshore => store url
 # xpmedical => store url, sku
