@@ -1,0 +1,493 @@
+{
+    "abu": {
+        "ABU AlphaGatorZ": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "356230",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "356263",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "356261",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "356265",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/agz/"
+        },
+        "ABU BareBum Diapers": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "75454",
+            "notes": "",
+            "shipping": 0,
+            "size": {},
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/bbv/"
+        },
+        "ABU Little Kings": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "356371",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "356380",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "356378",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "356382",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/lkg/"
+        },
+        "ABU Simple": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "2494",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70328",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70330",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "268655",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70326",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/whi/"
+        },
+        "BunnyHopps 2-Tape": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "234600",
+            "notes": "",
+            "shipping": 0,
+            "size": {},
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/bunnyhopps-diapers/"
+        },
+        "BunnyHopps 4-Tape": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "259967",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "259972",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "259969",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "259976",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/bny4/"
+        },
+        "Cloth-Backed Cushies": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "337662",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "337717",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "337715",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "337719",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/cbc/"
+        },
+        "Cushies": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "2524",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70310",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70312",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70314",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70307",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/cus/"
+        },
+        "DinoRawrZ": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "234599",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "234610",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "234608",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "234601",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/dno/"
+        },
+        "Kiddo By ABU": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "61241",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "80702",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "80705",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "80707",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "80700",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/kdo/"
+        },
+        "LittlePawz": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "2483",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "6048",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "6050",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70349",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s_m": {
+                    "id": "249447",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70338",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/pwz/"
+        },
+        "PeekABU": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "103511",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "114065",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "114063",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "114067",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl-plus": {
+                    "id": "319329",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/pab/"
+        },
+        "PreSchool Cloth-Backed": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "11519",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70287",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70289",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70291",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70285",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/prs/"
+        },
+        "PreSchool Plastic": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "11520",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70274",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70276",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70279",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70272",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/prp/"
+        },
+        "Simple Ultra": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "106055",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "114053",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "114051",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "114055",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/siu/"
+        },
+        "Space": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "625",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70339",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70344",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70348",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70335",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/spc/"
+        },
+        "Super Dry Kids": {
+            "backing": "plastic",
+            "capacity": 0,
+            "id": "2514",
+            "notes": "",
+            "shipping": 0,
+            "size": {
+                "l": {
+                    "id": "70319",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "m": {
+                    "id": "70321",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "s": {
+                    "id": "70324",
+                    "waist_high": "",
+                    "waist_low": ""
+                },
+                "xl": {
+                    "id": "70317",
+                    "waist_high": "",
+                    "waist_low": ""
+                }
+            },
+            "tapes": "4",
+            "units_per_bag": 10,
+            "url": "https://us.abuniverse.com/product/sdk/"
+        }
+    },
+    "amazon": {},
+    "awwsocute": {},
+    "bambino": {},
+    "ebay": {},
+    "incontrol": {},
+    "landofgenie": {},
+    "littleforbig": {},
+    "myinnerbaby": {},
+    "northshore": {},
+    "rearz": {},
+    "tykables": {},
+    "xpmedical": {}
+}
