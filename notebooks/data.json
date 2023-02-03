@@ -71,6 +71,524 @@
             "80": "abu_quantity_3"
         }
 	},
+    "https://us.abuniverse.com/product/cbc/": {
+        "id": "337662",
+		"template": {
+            "backing": "cloth",
+            "brand": "ABU",
+            "capacity": 4500,
+            "name": "Cloth-Backed Cushies",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "2",
+            "url": "https://us.abuniverse.com/product/cbc/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/cus/": {
+        "id": "2524",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 4500,
+            "name": "Cushies",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "2",
+            "url": "https://us.abuniverse.com/product/cus/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 22
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/dno/": {
+        "id": "234599",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 6050,
+            "name": "DinoRawrz",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/dno/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 41,
+                "waist_low": 35
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 34,
+                "waist_low": 26
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 42
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/lkg/": {
+        "id": "356371",
+		"template": {
+            "backing": "cloth",
+            "brand": "ABU",
+            "capacity": 7500,
+            "name": "Little Kings",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/lkg/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/pwz/": {
+        "id": "2483",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 6050,
+            "name": "Little Pawz",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/pwz/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 44,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "s_m": {
+                "label": "Smedium",
+                "waist_high": 31,
+                "waist_low": 25
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 22
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 52,
+                "waist_low": 45
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/pab/": {
+        "id": "103511",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 7500,
+            "name": "PeekABU",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/pab/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            },
+            "xl-plus": {
+                "label": "XXLarge",
+                "waist_high": 64,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/prp/": {
+        "id": "11520",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 3500,
+            "name": "PreSchool Plastic",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/prp/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 21
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 49,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/prs/": {
+        "id": "11519",
+		"template": {
+            "backing": "cloth",
+            "brand": "ABU",
+            "capacity": 3500,
+            "name": "PreSchool Cloth",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/prs/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 21
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 49,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/whi/": {
+        "id": "2494",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 6050,
+            "name": "Simple",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/whi/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 44,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 22
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 52,
+                "waist_low": 45
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/siu/": {
+        "id": "106055",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 7500,
+            "name": "Simple Ultra",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/siu/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/kdo/": {
+        "id": "61241",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 4500,
+            "name": "Kiddo",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "2",
+            "url": "https://us.abuniverse.com/product/kdo/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 21
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 49,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/spc/": {
+        "id": "625",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 5500,
+            "name": "Space",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/spc/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 44,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 22
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 52,
+                "waist_low": 45
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/sdk/": {
+        "id": "2514",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 4500,
+            "name": "Super Dry Kids",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "2",
+            "url": "https://us.abuniverse.com/product/sdk/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 30
+            },
+            "s": {
+                "label": "Small",
+                "waist_high": 29,
+                "waist_low": 22
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
     "https://rearz.ca/rearz-alpaca-overnight-diapers/": {
         "template": {
             "backing": "plastic",
