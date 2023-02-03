@@ -1,0 +1,349 @@
+{
+    "https://us.abuniverse.com/product/agz/": {
+        "id": "356230",
+		"template": {
+            "backing": "cloth",
+            "brand": "ABU",
+            "capacity": 7500,
+            "name": "ABU AlphaGatorZ",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/agz/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 37
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 31
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 43
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://us.abuniverse.com/product/bny4/": {
+        "id": "259967",
+		"template": {
+            "backing": "plastic",
+            "brand": "ABU",
+            "capacity": 6050,
+            "name": "BunnyHopps 4-Tape",
+            "notes": "",
+            "retailer": "ABU",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://us.abuniverse.com/product/bny4/"
+        },
+        "sizes": {
+            "l": {
+                "label": "Large",
+                "waist_high": 41,
+                "waist_low": 35
+            },
+            "m": {
+                "label": "Medium",
+                "waist_high": 34,
+                "waist_low": 26
+            },
+            "xl": {
+                "label": "XLarge",
+                "waist_high": 48,
+                "waist_low": 42
+            }
+        },
+        "units": {
+            "10": "abu_quantity_1",
+            "40": "abu_quantity_2",
+            "80": "abu_quantity_3"
+        }
+	},
+    "https://rearz.ca/rearz-alpaca-overnight-diapers/": {
+        "template": {
+            "backing": "plastic",
+            "brand": "Rearz",
+            "capacity": 5800,
+            "name": "Alpaca",
+            "notes": "",
+            "retailer": "Rearz",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://rearz.ca/rearz-alpaca-overnight-diapers/"
+        },
+        "sizes": [
+            {
+                "attribute": "/html/body/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[1]/form[1]/div[2]/div[1]/label[3]",
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 33
+            },
+            {
+                "attribute": "/html/body/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[1]/form[1]/div[2]/div[1]/label[2]",
+                "label": "Medium",
+                "waist_high": 40,
+                "waist_low": 30
+            },
+            {
+                "attribute": "/html/body/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[1]/form[1]/div[2]/div[1]/label[4]",
+                "label": "XLarge",
+                "waist_high": 47,
+                "waist_low": 36
+            }
+        ],
+        "units": {
+            "12": "/html/body/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[1]/form[1]/div[2]/div[2]/label[3]",
+            "36": "/html/body/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[1]/form[1]/div[2]/div[2]/label[4]"
+        }
+    },
+    "https://www.northshorecare.com/adult-diapers/adult-diapers-with-tabs/northshore-megamax-tab-style-briefs/northshore-megamax-tab-style-briefs-medium-case40-410s": {
+        "template": {
+            "backing": "plastic",
+            "brand": "NorthShore",
+            "capacity": 6500,
+            "name": "MEGAMAX",
+            "size_label": "Medium",
+            "notes": "",
+            "retailer": "NorthShore",
+            "shipping": 0.00,
+            "tapes": "4",
+            "units": 40,
+            "url": "https://www.northshorecare.com/adult-diapers/adult-diapers-with-tabs/northshore-megamax-tab-style-briefs/northshore-megamax-tab-style-briefs-medium-case40-410s",
+            "waist_high": 44,
+            "waist_low": 32
+        }
+    },
+    "https://incontroldiapers.com/incontrol-premium-nights-briefs-with-whiff-x-technology/": {
+        "template": {
+            "backing": "plastic",
+            "brand": "InControl",
+            "name": "Premium Nights",
+            "notes": "",
+            "retailer": "InControl",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://incontroldiapers.com/incontrol-premium-nights-briefs-with-whiff-x-technology/"
+        },
+        "sizes": [
+            {
+                "attribute": "1563",
+                "capacity": 5435,
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 33
+            },
+            {
+                "attribute": "1562",
+                "capacity": 5217,
+                "label": "Medium",
+                "waist_high": 40,
+                "waist_low": 30
+            },
+            {
+                "attribute": "1564",
+                "capacity": 5455,
+                "label": "XLarge",
+                "waist_high": 47,
+                "waist_low": 36
+            }
+        ],
+        "units": {
+            "12": "1559",
+            "36": "1560"
+        }
+    },
+    "https://incontroldiapers.com/incontrol-elite-hybrid-adult-incontinence-briefs/": {
+        "template": {
+            "backing": "plastic",
+            "brand": "InControl",
+            "name": "Elite",
+            "notes": "",
+            "retailer": "InControl",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://incontroldiapers.com/incontrol-elite-hybrid-adult-incontinence-briefs/"
+        },
+        "sizes": [
+            {
+                "attribute": "1326",
+                "capacity": 5435,
+                "label": "Large",
+                "waist_high": 42,
+                "waist_low": 33
+            },
+            {
+                "attribute": "1325",
+                "capacity": 5217,
+                "label": "Medium",
+                "waist_high": 40,
+                "waist_low": 30
+            },
+            {
+                "attribute": "1356",
+                "capacity": 4928,
+                "label": "Small",
+                "waist_high": 37,
+                "waist_low": 27
+            },
+            {
+                "attribute": "1327",
+                "capacity": 5455,
+                "label": "XLarge",
+                "waist_high": 47,
+                "waist_low": 36
+            },
+            {
+                "attribute": "1905",
+                "capacity": 2700,
+                "label": "XSmall",
+                "waist_high": 32,
+                "waist_low": 22
+            }
+        ],
+        "units": {
+            "12": "1328",
+            "36": "1329"
+        }
+    },
+    "https://www.amazon.com/dp/B08GL65JKT": {
+        "template": {
+            "backing": "plastic",
+            "brand": "ABDL Shop",
+            "capacity": 5000,
+            "name": "Carousel",
+            "size_label": "Large",
+            "notes": "",
+            "retailer": "Amazon",
+            "shipping": 0.00,
+            "tapes": "2",
+            "units": 10,
+            "url": "https://www.amazon.com/dp/B08GL65JKT",
+            "waist_high": 44,
+            "waist_low": 37
+        }
+    },
+    "https://myinnerbaby.com/products/ageplay-outfitters-seaside-princess-printed-adult-diaper.json": {
+        "template": {
+            "backing": "plastic",
+            "brand": "MyInnerBaby",
+            "capacity": 5000,
+            "name": "Seaside Princess",
+            "notes": "",
+            "retailer": "MyInnerBaby",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://myinnerbaby.com/products/ageplay-outfitters-seaside-princess-printed-adult-diaper"
+        },
+        "sizes": {
+            "Large (L)": {
+                "label": "Large",
+                "waist_high": 50,
+                "waist_low": 36
+            },
+            "Medium (M)": {
+                "label": "Medium",
+                "waist_high": 40,
+                "waist_low": 32
+            }
+        }
+
+    },
+    "https://bambinodiapers.com/products/new-cloudee-all-over-print-diapers.json": {
+        "template": {
+            "backing": "plastic",
+            "brand": "Bambino",
+            "capacity": 5000,
+            "name": "Cloudee",
+            "notes": "",
+            "retailer": "Bambino",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://bambinodiapers.com/products/new-cloudee-all-over-print-diapers"
+        },
+        "sizes": {
+            "L": {
+                "label": "Large",
+                "waist_high": 50,
+                "waist_low": 38
+            },
+            "M": {
+                "label": "Medium",
+                "waist_high": 40,
+                "waist_low": 32
+            },
+            "XL": {
+                "label": "XLarge",
+                "waist_high": 58,
+                "waist_low": 40
+            }
+        }
+    },
+    "https://tykables.com/products/str8up-pink.json": {
+        "template": {
+            "backing": "plastic",
+            "brand": "Tykables",
+            "capacity": 8000,
+            "name": "Str8up Pink",
+            "notes": "",
+            "retailer": "Tykables",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://tykables.com/products/str8up-pink"
+        },
+        "sizes": {
+            "Large": {
+                "label": "Large",
+                "waist_high": 48,
+                "waist_low": 34
+            },
+            "Medium": {
+                "label": "Medium",
+                "waist_high": 36,
+                "waist_low": 28
+            },
+            "XL": {
+                "label": "XLarge",
+                "waist_high": 52,
+                "waist_low": 48
+            }
+        }
+    },
+    "https://www.littleforbig.com/wp-json/wc/store/products/155255": {
+        "id": "155255",
+		"template": {
+            "backing": "plastic",
+            "brand": "LittleForBig",
+            "capacity": 5352,
+            "name": "Blushing Baby",
+            "notes": "assumed ISO",
+            "retailer": "LittleForBig",
+            "shipping": 0.00,
+            "tapes": "4",
+            "url": "https://www.littleforbig.com/product/blushing-baby-adult-diapers-10-pieces-packm-l/"
+        },
+        "sizes": {
+            "Size L": {
+                "label": "Large",
+                "waist_high": 46,
+                "waist_low": 36
+            },
+            "Size M": {
+                "label": "Medium",
+                "waist_high": 38,
+                "waist_low": 28
+            }
+        }
+	}
+}
