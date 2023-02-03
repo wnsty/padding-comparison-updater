@@ -233,35 +233,35 @@
         },
         "LittlePawz": {
             "backing": "plastic",
-            "capacity": 0,
+            "capacity": 5500,
             "id": "2483",
             "notes": "",
             "shipping": 0,
             "size": {
                 "l": {
                     "id": "6048",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "waist_high": "44",
+                    "waist_low": "37"
                 },
                 "m": {
                     "id": "6050",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "waist_high": "36",
+                    "waist_low": "31"
                 },
                 "s": {
                     "id": "70349",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "waist_high": "29",
+                    "waist_low": "22"
                 },
                 "s_m": {
                     "id": "249447",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "waist_high": "31",
+                    "waist_low": "25"
                 },
                 "xl": {
                     "id": "70338",
-                    "waist_high": "",
-                    "waist_low": ""
+                    "waist_high": "52",
+                    "waist_low": "45"
                 }
             },
             "tapes": "4",
@@ -466,6 +466,8 @@
     "myinnerbaby": {},
     "northshore": {},
     "rearz": {},
-    "tykables": {},
+    "tykables": {
+        
+    },
     "xpmedical": {}
 }

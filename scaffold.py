@@ -38,6 +38,13 @@ def build_scaffold():
                   indent=4, separators=(',', ': '))
 
 
+def grab_tykables_products() -> dict:
+    scaffold = {}
+
+    
+
+    return scaffold
+
 def grab_abu_products() -> dict:
     scaffold = {}
     link = 'https://us.abuniverse.com/wp-json/wc/store/products?per_page=100&sku=AGZ-,BBV-,BNY-,BNY4-,CBC-,CUS-,DNO-,KDO-,LKG-,PWZ-,PAB-,PRP-,PRS-,WHI-,SIU-,SPC-,SDK-'

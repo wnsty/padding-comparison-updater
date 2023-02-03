@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Link(Enum):
+class URL(Enum):
     ABU = 'https://us.abuniverse.com'
     AMAZON = 'https://www.amazon.com',
     AWWSOCUTE = 'https://www.awwsocute.com'
@@ -53,16 +53,15 @@ class Row():
 
     def __str__(self) -> str:
         return \
-            '{0:^16}'.format(self.retailer) \
-            + '{0:^16}'.format(self.brand) \
-            + '{0:^16}'.format(self.name) \
-            + '{0:^16}'.format(self.size) \
-            + '{0:^16}'.format(self.waist_low) \
-            + '{0:^16}'.format(self.waist_high) \
-            + '{0:^16}'.format(f'${self.price:.2f}') \
-            + '{0:^16}'.format(f'${self.shipping:.2f}') \
-            + '{0:^16}'.format(self.units) \
-            + '{0:^16}'.format(self.capacity) \
+            '{0:^8}'.format(self.retailer) \
+            + '{0:^7}'.format(self.brand) \
+            + '{0:^24}'.format(self.name) \
+            + '{0:^8}'.format(self.size) \
+            + '{0:^6} / {1:^6}'.format(self.waist_low, self.waist_high) \
+            + '{0:^10}'.format(f'${self.price:.2f}') \
+            + '{0:^10}'.format(f'${self.shipping:.2f}') \
+            + '{0:^17}'.format(self.units) \
+            + '{0:^14}'.format(self.capacity) \
             + '{0:^16}'.format(f'${self.unit_price:.2f}') \
             + '{0:^16}'.format(f'${self.total_price:.2f}') \
 			+ '{0:^16}'.format(f'{self.ml_per_price:.0f}') \
@@ -79,11 +78,11 @@ class Row():
 #         self.units = units
 
 
-# tykeables => product url, variant id
-# myinnerbaby => product url, variant id
-# bambino => product url, variant id
+## tykeables => product url, variant id
+## myinnerbaby => product url, variant id
+## bambino => product url, variant id
 
-# abu => store url, size, packs
+## abu => store url, size, packs
 # lfb => variant url
 
 # northshore => store url

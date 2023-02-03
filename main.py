@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pygsheets
 from pygsheets import Worksheet, Cell, Address
 import numpy as np
-from data import product_list, Row, Link
+from data import product_list, Row, URL
 from selenium import webdriver
 from selenium.webdriver.firefox.webdriver import WebDriver
 import re
@@ -16,12 +16,25 @@ headers = {
 }
 driver: WebDriver = None
 
-with open('json/products.json') as file:
-    products = json.load(file)
+display_sizes = {
+	'm': 'Medium',
+	'l': 'Large',
+	'xl': 'X-Large',
+}
+
+with open('json/product_info.json') as file:
+    product_info = json.load(file)
+
+with open('json/product_templates.json') as file:
+    product_templates = json.load(file)
 
 
-def error_bad_link(status_code: str, link: str):
-    print(f'Error: {status_code} for {link}')
+def sanitize(text) -> str:
+    return text.encode('ascii', 'ignore').decode()
+
+
+def error_bad_url(status_code: str, url: str):
+    print(f'Error: {status_code} for {url}')
 
 
 def init_driver():
@@ -34,16 +47,17 @@ def init_driver():
 
 def abu(soup: BeautifulSoup) -> list[Row]:
     rows = []
-    title = soup.find('h1', {'class': 'product_title entry-title'}).string
-    info = products['abu'][title]
+    title = soup.find('h1', {'class': 'product_title entry-title'}
+                      ).string.encode('ascii', 'ignore').decode()
+    info = product_templates['abu'][title]
 
     for size in info['size']:
         id = info['size'][size]['id']
-        link = f'https://us.abuniverse.com/wp-json/wc/store/products/{id}'
+        url = f'https://us.abuniverse.com/wp-json/wc/store/products/{id}'
         in_stock = False
-        with requests.get(link) as response:
+        with requests.get(url) as response:
             if response.status_code != 200:
-                error_bad_link(response.status_code, link)
+                error_bad_url(response.status_code, url)
                 continue
             if response.json()['is_in_stock']:
                 in_stock = True
@@ -122,42 +136,63 @@ def rearz(soup: BeautifulSoup) -> Row:
     raise NotImplemented()
 
 
-def tykables(soup: BeautifulSoup) -> Row:
-    row = row()
-    row.price = soup.find('span', {'class': 'money'}).string
-    return row
+def tykables(data) -> list[dict]:
+    result = []
+    product = data['product']
+    name = sanitize(product['title'])
+    for variant in product['variants']:
+        product_template = product_templates[name]
+        variant_info = product_info[name]['variants'][variant['id']]
+        price = float(variant['price'])
+        units = int(variant_info['units'])
+        unit_price = price / units
+        size = product_info['sizes'][variant_info['size']]
+
+        result.append(product_template | {
+            'in_stock': 'Yes' if variant['inventory_quantity'] != 0 else 'No',
+            'ml_per_unit_price': product_template['capacity'] / unit_price,
+            'price': price,
+            'size': display_sizes[variant_info['size']],
+            'total_price': price + product_template['shipping'],
+            'units': units,
+            'unit_price': price / units,
+            'waist_high': size['waist_high'],
+            'waist_low': size['waist_low']
+        })
+
+        print(list)
 
 
 def xp_medical(soup: BeautifulSoup) -> Row:
     raise NotImplemented()
 
 
-def from_link(link) -> Row:
-    if link.startswith(Link.AMAZON.value):
+def from_url(url) -> Row:
+    if url.startswith(URL.AMAZON.value):
         init_driver()
-        driver.get(link)
+        driver.get(url)
         return amazon(BeautifulSoup(driver.page_source, parser))
-    elif link.startswith(Link.REARZ.value):
+    elif url.startswith(URL.REARZ.value):
         init_driver()
-        driver.get(link)
+        driver.get(url)
         return rearz(BeautifulSoup(driver.page_source, parser))
-    elif link.startswith(Link.INCONTROL.value):
+    elif url.startswith(URL.INCONTROL.value):
         init_driver()
-        driver.get(link)
+        driver.get(url)
         return incontrol(BeautifulSoup(driver.page_source, parser))
 
-    with requests.get(link, headers=headers) as response:
+    with requests.get(url, headers=headers) as response:
         if response.status_code != 200:
-            error_bad_link(response.status_code, link)
+            error_bad_url(response.status_code, url)
             return Row()
 
         soup = BeautifulSoup(response.text, parser)
 
-        if link.startswith(Link.ABU.value):
+        if url.startswith(URL.ABU.value):
             return abu(soup)
-        elif link.startswith(Link.AWWSOCUTE.value):
+        elif url.startswith(URL.AWWSOCUTE.value):
             return aww_so_cute(soup)
-        elif link.startswith(Link.TYKABLES.value):
+        elif url.startswith(URL.TYKABLES.value):
             return tykables(soup)
 
         else:
@@ -171,98 +206,52 @@ def update_sheet():
     sh = gc.open('Automatic Padding Comparison Chart')
     wks: Worksheet = sh.worksheet('title', 'Diapers')
 
-    links = wks.get_col(wks.find('Link')[0].col)[1:]
+    urls = wks.get_col(wks.find('Link')[0].col)[1:]
 
     resolved = {}
     prices = []
 
-    for link in links:
-        if link == '':
+    for url in urls:
+        if url == '':
             continue
 
-        if link in resolved:
-            price = resolved[link]
+        if url in resolved:
+            price = resolved[url]
         else:
-            price = from_link(link)
-            resolved[link] = price
+            price = from_url(url)
+            resolved[url] = price
 
         prices.append([price])
 
     wks.update_values(f'H2', prices)
 
-# update_sheet()
-
-
-def grab_abu_products():
-    scaffold = {'abu': {}}
-    link = 'https://us.abuniverse.com/wp-json/wc/store/products?per_page=100&sku=AGZ-,BBV-,BNY-,BNY4-,CBC-,CUS-,DNO-,KDO-,LKG-,PWZ-,PAB-,PRP-,PRS-,WHI-,SIU-,SPC-,SDK-'
-    with requests.get(link) as response:
-        if response.status_code != 200:
-            error_bad_link(response.status_code, link)
-            return
-
-        for product in response.json():
-            name = unescape(product['name']).encode('ascii', 'ignore').decode()
-            scaffold['abu'][name] = {
-                'id': str(product['id']),
-                'size': grab_abu_variants(product['id']),
-                'shipping': 0,
-                'units_per_bag': 10,
-                'capacity': 0,
-                'tapes': '4',
-                'backing': 'plastic',
-                'notes': '',
-                'url': product['permalink'],
-            }
-
-        with open('json/abu_products.json', 'w') as file:
-            json.dump(scaffold, file, sort_keys=True,
-                      indent=4, separators=(',', ': '))
-
-
-def grab_abu_variants(key) -> dict:
-    result = {}
-
-    link = f'https://us.abuniverse.com/wp-json/wc/store/products/{key}'
-    with requests.get(link) as response:
-        if response.status_code != 200:
-            error_bad_link(response.status_code, link)
-            return result
-
-    data = response.json()
-
-    for variation in data['variations'][::2]:
-        result[variation['attributes'][1]['value']] = {
-            'id': variation['id'],
-            'waist_high': '',
-            'waist_low': '',
-        }
-    return result
-
 
 def test():
-    print(
-        '{0:^16}'.format('Seller')
-        + '{0:^16}'.format('Brand')
-        + '{0:^16}'.format('Name')
-        + '{0:^16}'.format('Size')
-        + '{0:^16}'.format('Waist Low')
-        + '{0:^16}'.format('Waist High')
-        + '{0:^16}'.format('Price')
-        + '{0:^16}'.format('Shipping')
-        + '{0:^16}'.format('Units')
-        + '{0:^16}'.format('Capacity')
-        + '{0:^16}'.format('Unit Price')
-        + '{0:^16}'.format('Total Price')
-        + '{0:^16}'.format('ML Per Unit $')
-        + '{0:^16}'.format('In Stock')
-        + '{0:^16}'.format('Notes')
-        + '{0:^16}'.format('URL')
-    )
-    for row in from_link('https://us.abuniverse.com/product/siu/'):
-        print(row)
+    with requests.get('https://tykables.com/products/str8up-pink.json') as response:
+        tykables(response.json())
+
+    # print(
+    #     '{0:^8}'.format('Seller')
+    #     + '{0:^7}'.format('Brand')
+    #     + '{0:^24}'.format('Name')
+    #     + '{0:^8}'.format('Size')
+    #     + '{0:^15}'.format('Waist')
+    #     + '{0:^10}'.format('Price')
+    #     + '{0:^10}'.format('Shipping')
+    #     + '{0:^17}'.format('Units')
+    #     + '{0:^14}'.format('Capacity')
+    #     + '{0:^16}'.format('Unit Price')
+    #     + '{0:^16}'.format('Total Price')
+    #     + '{0:^16}'.format('ML Per Unit $')
+    #     + '{0:^16}'.format('In Stock')
+    #     + '{0:^16}'.format('Notes')
+    #     + '{0:^16}'.format('URL')
+    # )
+
+    # for name, product in product_templates['abu'].items():
+    #     url = product['url']
+    #     for row in from_url(url):
+    #         print(row)
 
 
-grab_abu_products()
-# grab_abu_variants(106055)
-# test()
+test()
