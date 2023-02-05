@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup, Tag
 import pygsheets
 from pygsheets import Worksheet, Cell, Address
 import numpy as np
-from data import product_list, Row
+from old_src.data import product_list, Row
 from selenium import webdriver
 from selenium.webdriver.firefox.webdriver import WebDriver
 from enum import Enum
@@ -41,7 +41,7 @@ def build_scaffold():
 def grab_tykables_products() -> dict:
     scaffold = {}
 
-    
+
 
     return scaffold
 
