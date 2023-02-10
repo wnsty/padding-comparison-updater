@@ -20,7 +20,7 @@ SIZES = {
     'xs': 'XSmall',
     'XS': 'XSmall',
     'XS (Youth)': 'XSmall',
-    'X-Small': 'XSMall',
+    'X-Small': 'XSmall',
     'Teen': 'XSmall',
     'XS - Teen': 'XSmall',
     's': 'Small',
@@ -293,7 +293,7 @@ def incontrol(url, product) -> list[dict]:
 def land_of_genie(url, product) -> list[dict]:
 	rows = []
 	info = product['info']
-	sizes = product['sizes']
+	sizes = product.get('sizes') or None
 	data = get_data(url)['product']
 
 	for variant in data['variants']:
@@ -308,7 +308,6 @@ def land_of_genie(url, product) -> list[dict]:
 			'size': size,
 			'units': int(variant['option2'][:1]) * 10
 		}))
-
 	return rows
 
 
@@ -339,7 +338,7 @@ def little_for_big(url, product) -> list[dict]:
 		price = variant_data['prices']['price']
 		price = float('{0}.{1}'.format(price[:-2], price[-2:]))
 
-		info = info | product.get('sizes')[size] or LITTLE_FOR_BIG_SIZES(size)
+		info = info | LITTLE_FOR_BIG_SIZES[size]
 
 		rows.append(calculate_derived_info(info | {
 			'price': price,
@@ -516,6 +515,7 @@ DOMAINS = {
 	'bambino': bambino,
 	'incontrol': incontrol,
 	'www.littleforbig': little_for_big,
+	'landofgenie': land_of_genie,
 	'myinnerbaby': my_inner_baby,
 	'www.northshore': northshore,
 	'rearz': rearz,
@@ -524,8 +524,10 @@ DOMAINS = {
 }
 
 def main():
-	file_name = datetime.date.today().strftime('%d-%m-%Y.json')
-	products = yaml.safe_load(open('products.yml', 'r'))
+	file_name = datetime.date.today().strftime('yaml/%d-%m-%Y.json')
+	input_file = open('yaml/products.yml', 'r')
+	products = yaml.safe_load(input_file)
+	input_file.close()
 	start_index = 0
 	index = 0
 	rows = []
@@ -536,12 +538,12 @@ def main():
 		print(index, url)
 		new_rows = check_routine(url, product)
 		rows.extend(new_rows)
-	
 	print(f'Writing to {file_name}')
 	with open(file_name, 'w') as file:
 		json.dump(rows, file, sort_keys=True, indent=4, separators=(',', ': '))
+		file.close()
 	print('Done!')
 
-products = yaml.safe_load(open('products.yml', 'r'))
-test_fetch(little_for_big, 'https://www.littleforbig.com/wp-json/wc/store/products/150610')
-# main()
+# products = yaml.safe_load(open('yaml/products.yml', 'r'))
+# test_fetch(rearz, 'https://rearz.ca/incontrol-elite-hybrid-briefs/')
+main()
