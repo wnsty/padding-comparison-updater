@@ -342,7 +342,7 @@ def little_for_big(url, product) -> list[dict]:
 
 		rows.append(calculate_derived_info(info | {
 			'price': price,
-            'in_stock': variant_data['is_in_stock'],
+            'in_stock': 'Yes' if variant_data['is_in_stock'] else 'No',
             'size': size,
             'units': int(units),
 		}))
