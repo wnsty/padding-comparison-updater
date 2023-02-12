@@ -2,4 +2,6 @@
 client_secret.json
 .venv/
 __pycache__/
+notebooks/
 sheets.googleapis.com-python.json
+geckodriver.log
