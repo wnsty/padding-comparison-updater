@@ -25,7 +25,7 @@ https://bambinodiapers.com/products/copy-of-bloomeez-all-over-print-diapers:
     backing: Plastic
     brand: Bambino
     capacity: 5000
-    name: Boomeez
+    name: Bloomeez
     notes: ''
     retailer: Bambino
     shipping: 0.0
@@ -1359,11 +1359,101 @@ https://www.amazon.com/dp/B08GL65JKT:
     retailer: Amazon
     shipping: 0.0
     size: Large
-    tapes: 2
+    tapes: 4
     units: 10
     url: https://www.amazon.com/dp/B08GL65JKT
     waist_high: 44
     waist_low: 37
+https://www.amazon.com/dp/B08GL7M5YY:
+  info:
+    backing: Plastic
+    brand: ABDL Shop
+    capacity: 5000
+    name: Carousel
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: Medium
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B0B08GL7M5YY8GL65JKT
+    waist_high: 36
+    waist_low: 28
+https://www.amazon.com/dp/B09GF4GHQG:
+  info:
+    backing: Plastic
+    brand: ABDL Shop
+    capacity: 5000
+    name: Carousel
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: XLarge
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B09GF4GHQG
+    waist_high: 52
+    waist_low: 45
+https://www.amazon.com/dp/B0B4ZJR4BW:
+  info:
+    backing: Plastic
+    brand: TREST
+    capacity: 9500
+    name: Elite
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: Small
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B0B4ZJR4BW
+    waist_high: 34
+    waist_low: 24
+https://www.amazon.com/dp/B09721SLKL:
+  info:
+    backing: Plastic
+    brand: TREST
+    capacity: 9500
+    name: Elite
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: Medium
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B09721SLKL
+    waist_high: 40
+    waist_low: 30
+https://www.amazon.com/dp/B097235LNW:
+  info:
+    backing: Plastic
+    brand: TREST
+    capacity: 9500
+    name: Elite
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: Large
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B097235LNW
+    waist_high: 48
+    waist_low: 38
+https://www.amazon.com/dp/B09G8RZMMM:
+  info:
+    backing: Plastic
+    brand: TREST
+    capacity: 9500
+    name: Elite
+    notes: ''
+    retailer: Amazon
+    shipping: 0.0
+    size: XLarge
+    tapes: 4
+    units: 10
+    url: https://www.amazon.com/dp/B09G8RZMMM
+    waist_high: 58
+    waist_low: 46
 https://www.littleforbig.com/wp-json/wc/store/products/155255:
   info:
     backing: Plastic

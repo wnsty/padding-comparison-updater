@@ -190,7 +190,7 @@ def amazon(url, product) -> list[dict]:
 	driver_to(url)
 	soup = BeautifulSoup(driver.page_source, 'html.parser')
 
-	price: float = float(soup.find('span', {'class': 'apexPriceToPay'}).find('span', {'class': 'a-offscreen'}).string[1:])
+	price: float = float(soup.find('span', {'class': 'a-price'}).find('span', {'class': 'a-offscreen'}).string[1:])
 	in_stock: str = 'Yes' if soup.find('span', {'class': 'a-color-success'}) else 'No'
 
 	return [calculate_derived_info(info | {
@@ -524,22 +524,28 @@ DOMAINS = {
 }
 
 def main():
-	file_name = datetime.date.today().strftime('yaml/%d-%m-%Y.json')
+	file_name = datetime.date.today().strftime('yaml/%d-%m-%Y')
 	input_file = open('yaml/products.yml', 'r')
 	products = yaml.safe_load(input_file)
 	input_file.close()
 	start_index = 0
 	index = 0
-	rows = []
-	for url, product in products.items():
-		index += 1
-		if index < start_index:
-			continue
-		print(index, url)
-		new_rows = check_routine(url, product)
-		rows.extend(new_rows)
+	rows: list = []
+	with open(file_name + "-working.json", 'a+') as file:
+		try:
+			rows = json.loads(file.read())
+		except:
+			print("Skipped working file")
+		for url, product in products.items():
+			index += 1
+			if index < start_index:
+				continue
+			print(index, url)
+			new_rows = check_routine(url, product)
+			rows.extend(new_rows)
+			json.dump(rows, file, sort_keys=True, indent=4, separators=(',', ': '))
 	print(f'Writing to {file_name}')
-	with open(file_name, 'w') as file:
+	with open(file_name + ".json", 'w') as file:
 		json.dump(rows, file, sort_keys=True, indent=4, separators=(',', ': '))
 		file.close()
 	print('Done!')
